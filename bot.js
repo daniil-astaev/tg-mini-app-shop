@@ -10,7 +10,7 @@ bot.command("start", async (ctx) => {
     console.log(`Пользователь ${ctx.from.first_name} нажал /start`);
 
     // ВАЖНО: Замени на свой актуальный ngrok URL!
-    const webAppUrl = process.env.WEB_APP_URL || "https://unenigmatically-punier-emmy.ngrok-free.dev";
+    const webAppUrl = process.env.WEB_APP_URL || "https://tg-mini-app-shop.vercel.app";
 
     const keyboard = new Keyboard()
         .webApp("🛒 Открыть магазин", webAppUrl)
