@@ -9,7 +9,7 @@
     {"src": "/(.*)", "dest": "/dist/$1"}
   ],
   "env": {
-    "BOT_TOKEN": "@bot_token",
-    "WEB_APP_URL": "@web_app_url"
+    "BOT_TOKEN": "",
+    "WEB_APP_URL": ""
   }
 }
