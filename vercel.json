@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {"src": "bot.js", "use": "@vercel/node"},
+    {"src": "package.json", "use": "@vercel/static-build", "config": {"distDir": "dist"}}
+  ],
+  "routes": [
+    {"src": "/api/bot", "dest": "/bot.js"},
+    {"src": "/(.*)", "dest": "/dist/$1"}
+  ],
+  "env": {
+    "BOT_TOKEN": "@bot_token",
+    "WEB_APP_URL": "@web_app_url"
+  }
+}
